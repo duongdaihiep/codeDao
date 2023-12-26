@@ -1,0 +1,22 @@
+{
+	"folders": [
+		{
+			"path": "../../../webHTML-master"
+		},
+		{
+			"path": "../../python"
+		},
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../Website_BeeMart1"
+		},
+		{
+			"path": "../../../../Loader-Animation/Loader"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Loader"
+	}
+}

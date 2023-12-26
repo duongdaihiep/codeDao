@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mã nguồn màu đen</title>
+    <style>
+        body {
+            color: #fff;
+            font-family: 'Courier New', monospace;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        #code-container {
+            background-color: #000;
+            position: relative;
+            width: 50vw;
+            max-width: 80%;
+        }
+
+        pre {
+            padding: 10px;
+            overflow-x: auto;
+            white-space: pre-wrap;
+            margin: 0;
+        }
+
+        code {
+            color: #00ff00;
+        }
+
+        .btn-copy {
+            position: absolute;
+            top: 0;
+            right: 0;
+            padding: 5px;
+            background-color: #555;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<div id="code-container">
+    <button class="btn-copy" data-clipboard-target="#code">Copy Code</button>
+    <pre id="code">
+        function helloWorld() {
+            console.log("Hello, World!");
+        }
+    </pre>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var clipboard = new ClipboardJS('.btn-copy');
+
+        clipboard.on('success', function (e) {
+            console.log(e);
+            e.clearSelection();
+        });
+
+        clipboard.on('error', function (e) {
+            console.log(e);
+        });
+    });
+</script>
+
+</body>
+</html>

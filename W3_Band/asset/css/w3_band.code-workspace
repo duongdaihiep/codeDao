@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../../../../Tự học/w3_band"
+		},
+		{
+			"path": "../../../../Tự học/python"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "w3_band"
+	}
+}
