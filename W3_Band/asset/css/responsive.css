@@ -1,1 +1,102 @@
-gfdsdgfgafsga
+/* mobile  */
+/* @media(max-width:739px ){
+
+}
+@media(min-width:740px)and( max-width:1023px){
+
+}
+@media(min-width:1024px){
+
+} */
+
+/* Các quy tắc CSS chung ở đây */
+
+/* Thiết lập Font Size và Padding cho Màn Hình Nhỏ (Mobile) */
+@media (max-width: 740px) {
+  #header {
+    /* height: auto; */
+    /* display: none; */
+    /* overflow: hidden; */
+  }
+
+
+  #nav li a {
+    /* padding: 10px; */
+    line-height: 32px;
+  }
+  #slider{
+    margin-right: -8px;
+  }
+  #slider .text-content {
+    bottom: 20px;
+    display: none;
+  }
+  #nav {
+    text-align: left;
+    padding-top: 10px;
+  }
+  #nav li {
+    display: block;
+    margin-bottom: 5px;
+  }
+  .subnav{
+    position: absolute;
+    top: 500px;
+    left: 0;
+  }
+  #search-btn {
+    display: none;
+  }
+  #mobile-menu{
+    display: inline;
+    /* z-index: 5; */
+  }
+  .member-list .member-item {
+    width: 100%;
+  }
+  #content .place-list .place-item {
+    width: calc(100% - 16px);
+  }
+  .modal {
+    display: none;
+  }
+  #content .place-item {
+    margin-left: 8px; /* Hoặc giá trị phù hợp */
+    margin-right: 8px; /* Hoặc giá trị phù hợp */
+  }
+  .content-section .contact ul,
+  .content-section form {
+    width: 100%;
+  }
+  .content-section .contact ul {
+    margin: 16px;
+    padding-left: 8px;
+  }
+}
+
+/* Thiết lập Kích Thước và Độ Rộng Cho Ảnh */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Thiết lập Chiều Rộng Của Các Phần Tử Chính */
+#content .content-section {
+  width: 90%;
+}
+
+/* Kiểu Dáng Cho Tablet (width từ 741px đến 1024px) */
+@media (min-width: 741px) and (max-width: 1024px) {
+  /* Thêm các điều chỉnh cho tablet tại đây */
+  /* Ví dụ: */
+  #nav li a {
+    /* padding: 15px; */
+    /* line-height:32px; */
+  }
+}
+
+/* Thiết lập Chiều Rộng và Độ Rộng Của Footer */
+#footer {
+  flex-direction: column;
+  height: auto;
+}
