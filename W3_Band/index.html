@@ -15,11 +15,12 @@
             <div id="header">
                 <ul id="nav">
                     <li><a href="#">Home</a></li>
+                    
                     <li><a href="#band">Band</a></li>
                     <li><a href="#tour">Tour</a></li>
                     <li><a href="#contact">Contact</a></li>
                     <li>
-                        <a href>
+                        <a href="">
                             More
                             <i class="iconsubnav ti-angle-down"></i>
                         </a>
@@ -29,7 +30,9 @@
                             <li><a href>Media</a></li>
                         </ul>
                     </li>
-                    <a href id="search-btn" class=" ti-search"></a>
+                    <button  id="search-btn" class=" ti-search"></button>
+                    <button  id="mobile-menu" class=" ti-menu"></button>
+                    
                 </ul>
 
             </div>
@@ -62,15 +65,15 @@
                         exercitation ullamco laboris nisi ut aliquip ex ea
                         commodo consequat.</p>
                     <div class="member-list row">
-                        <div class="col-3 ">
+                        <div class="col-3 member-item ">
                              <p class="member-name">Name</p>
                              <img src="./asset/img/bandmember.jpg" alt="memberImg">
                         </div>
-                        <div class="col-3">
+                        <div class="col-3 member-item">
                              <p class="member-name">Name</p>
                              <img src="./asset/img/bandmember.jpg" alt="memberImg">
                         </div>
-                        <div class="col-3">
+                        <div class="col-3 member-item">
                              <p class="member-name">Name</p>
                              <img src="./asset/img/bandmember.jpg" alt="memberImg">
                         </div>
@@ -90,7 +93,7 @@
                             <li>November<span class="soul-out">Sold out</span></li>
                             <li>December <span class="quantity"> 3 </span></li>
                         </ul>
-                        <div class="row">
+                        <div class="row place-list">
                             <div class="place-item col-3">
                                 <img src="./asset/img/placeImg.jpeg" alt="placeImg">
                                 <h3 class="place-heading">New York</h3>
@@ -231,6 +234,17 @@
             modalContainer.addEventListener('click',function(even){
                 event.stopPropagation();
             })
+
+            var header = document.getElementById('header');
+            var mobileMenu= document.getElementById('mobile-menu');
+            mobileMenu.onclick=function(){
+                var isClose = header.clientHeight=== 46;
+                if (isClose){
+                    header.style.height='auto';
+                } else{
+                    header.style.height='46px';
+                }
+            }
         </script>
     </body>
 </html>
