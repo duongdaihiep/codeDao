@@ -13,11 +13,6 @@
 
 /* Thiết lập Font Size và Padding cho Màn Hình Nhỏ (Mobile) */
 @media (max-width: 740px) {
-  #header {
-    /* height: auto; */
-    /* display: none; */
-    /* overflow: hidden; */
-  }
   #nav {
     text-align: left;
     /* padding-top: 10px; */
