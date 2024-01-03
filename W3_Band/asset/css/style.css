@@ -134,7 +134,7 @@ html {
   position: relative;
   margin-top: 46px;
   padding-top: 50%;
-  background: url("/w3_band/asset/img/slider1.jpeg") top center / cover
+  background: url("../img/slider1.jpeg") top center / cover
     no-repeat;
   z-index: 1;
 }
@@ -247,7 +247,9 @@ margin-bottom: 48px;
 #content .place-item img {
   width: 100%;
 }
-
+#content .place-item img:hover{
+  opacity: 0.8;
+}
 #content .place-item .place-heading {
   font-weight: 500;
   margin: 15px;
@@ -283,6 +285,7 @@ margin-bottom: 48px;
   /* margin-right: 20px; */
 }
 .content-section form {
+  margin-bottom: 32 px;
 }
 .content-section input {
   height: 40px;
@@ -295,6 +298,7 @@ margin-bottom: 48px;
   color: #fff;
   background-color: #000;
   border: 1px solid #000;
+  margin-bottom: 32px;
 }
 
 .map-section img {

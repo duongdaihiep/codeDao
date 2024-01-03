@@ -13,11 +13,6 @@
 
 /* Thiết lập Font Size và Padding cho Màn Hình Nhỏ (Mobile) */
 @media (max-width: 740px) {
-  #header {
-    /* height: auto; */
-    /* display: none; */
-    /* overflow: hidden; */
-  }
   #nav {
     text-align: left;
     /* padding-top: 10px; */
@@ -94,18 +89,27 @@
     margin: 16px;
     padding-left: 8px;
   }
+  .contact-submit-btn{
+    width: calc(100% - 16px);
+  }
+  #content .content-section {
+    width: 90%;
+  }
+  .s-full-width{
+    width: calc(100% - 16px);
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
 }
+
 
 /* Thiết lập Kích Thước và Độ Rộng Cho Ảnh */
-img {
-  max-width: 100%;
-  height: auto;
-}
+
 
 /* Thiết lập Chiều Rộng Của Các Phần Tử Chính */
-#content .content-section {
-  width: 90%;
-}
+
 
 /* Kiểu Dáng Cho Tablet (width từ 741px đến 1024px) */
 @media (min-width: 741px) and (max-width: 1024px) {
