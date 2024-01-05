@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  flex-direction: column;
+}
+#btn {
+  /* margin: auto; */
+  margin-top: 48px;
+}
+.btn {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  padding: 12px 48px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: opacity ease 0.2s;
+  color: #fff;
+}
+.btn + .btn {
+  margin-left: 16px;
+}
+.btn[disabled] {
+  opacity: 0.5 !important;
+  cursor: default;
+}
+.btn:hover {
+  opacity: 0.8;
+}
+.btn--success {
+  background-color: #71be34;
+}
+.btn--warn {
+  background-color: #ffb702;
+}
+.btn--danger {
+  background-color: #ff623d;
+}
+.btn--size-s {
+  padding: 8px 40px;
+}
+.btn--size-l {
+  padding: 16px 56px;
+}
+
+#toast {
+  position: absolute;
+  top: 32px;
+  right: 32px;
+  /* background-color: #ccc; */
+}
+.toast {
+  width: 400px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 16px 0;
+  border-radius: 2px;
+  border-left: 4px solid;
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.08);
+  /* animation: sliderInLeft ease 0.5s, fadeOut linear 1s 3s forwards ; */
+}
+@keyframes sliderInLeft{
+    from{
+        opacity: 0;
+        transform: translateX(calc(100% + 32px));
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes fadeOut{
+    to{
+        opacity: 0;
+    }
+}
+.toast + .toast {
+  margin-top: 24px;
+}
+.toast__icon {
+  font-size: 24px;
+}
+.toast_close,
+.toast__icon {
+  padding: 0 16px;
+}
+
+.toast__body {
+  flex: 1;
+}
+.toast__title {
+  font-size: 16px;
+  font-weight: 600;
+}
+.toast__msg {
+  font-size: 14px;
+  line-height: 1.5;
+}
+.toast_close {
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+.toast_close :hover{
+    opacity: 0.8;
+}
+.toast--success {
+  border-left-color: #71be34;
+}
+.toast--info {
+  border-left-color: #0099ff;
+}
+.toast--warn {
+  border-left-color: #ffb702;
+}
+.toast--error {
+  border-left-color: #ff623d;
+}
+.toast__icon--success {
+  color: #71be34;
+}
+.toast__icon--info {
+  color: #0099ff;
+}
+.toast__icon--warn {
+  color: #ffb702;
+}
+.toast__icon--error {
+  color: #ff623d;
+}
