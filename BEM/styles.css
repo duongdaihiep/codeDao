@@ -24,7 +24,7 @@ body {
 .btn + .btn {
   margin-left: 16px;
 }
-.btn[disabled] {
+.btn[disabled] {    
   opacity: 0.5 !important;
   cursor: default;
 }
@@ -63,6 +63,7 @@ body {
   border-left: 4px solid;
   box-shadow: 0 5px 8px rgba(0, 0, 0, 0.08);
   /* animation: sliderInLeft ease 0.5s, fadeOut linear 1s 3s forwards ; */
+  transition: all linear .5s;
 }
 @keyframes sliderInLeft{
     from{
@@ -85,7 +86,7 @@ body {
 .toast__icon {
   font-size: 24px;
 }
-.toast_close,
+.toast__close,
 .toast__icon {
   padding: 0 16px;
 }
@@ -101,12 +102,12 @@ body {
   font-size: 14px;
   line-height: 1.5;
 }
-.toast_close {
+.toast__close {
   font-size: 20px;
   color: rgba(0, 0, 0, 0.3);
   cursor: pointer;
 }
-.toast_close :hover{
+.toast__close :hover{
     opacity: 0.8;
 }
 .toast--success {
